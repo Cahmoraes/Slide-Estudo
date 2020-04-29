@@ -21,9 +21,24 @@ img {
   display: flex;
 }
 
+.slide:hover {
+  will-change: transform;
+}
+
 .slide li {
   flex: 1 0 auto;
   width: 80vw;
   max-width: 800px;
   margin: 0 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+  border-radius: 4px;
+  opacity: .8;
+  transform: scale(.8);
+  transition: .4s;
+}
+
+.slide li.active {
+  opacity: 1;
+  transform: scale(1);
 }
